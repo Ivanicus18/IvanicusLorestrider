@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+  
+:root {
+    --primary-color: #fce138;
+    --secondary-color: #024e76;
+    --tertiary-color: #39a6b2;
+    --primary-color-transparent: rgba(252,225,56, 0.8);
+    --secondary-color-transparent: rgba(2, 78, 118, 0.8);
+}
+  
+body {
+    color: var(--tertiary-color);
+    font-family: Helvetica, Arial, sans-serif;
+}
+  
+header {
+    padding: 20px 35px;
+    background-image: url('../images/hero-bg.jpg');
+    background-position: 80%;
+    background-attachment:fixed;
+    background-size: cover;
+    /* 2.2 - added flex and removed inline / float properties from h1 and nav */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position:sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 9999;
+}
+  
+header h1 {
+    font-weight: bold;
+    margin: 0;
+    font-size: 36px;
+    color: var(--primary-color);
+    text-shadow: 0px 0 15px rgba(0, 0, 0, 0.5);
+}
+  
+header a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+  
+header nav {
+    margin: 7px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+  
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
+  
+  header nav ul li a {
+    padding: 10px 15px;
+    font-weight: 200;
+    font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+  }
+  
+  header nav ul li a:hover {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 15px;
+    text-shadow:none;
+  }
+  
+  /* FOOTER STYLES START */
+  footer {
+    background: var(--secondary-color);
+    padding: 40px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: var(--primary-color);
+    width: 100%;
+  }
+  
+  footer h2 {
+    font-size: 30px;
+    margin: 0;
+  }
+  
+  footer div {
+    line-height: 1.5;
+    text-align: right;
+  }
+  
+  footer a {
+    color: var(--primary-color);
+  }

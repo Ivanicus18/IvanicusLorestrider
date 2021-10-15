@@ -6,7 +6,7 @@
   
 :root {
     --primary-color: #fce138;
-    --secondary-color: #024e76;
+    --secondary-color: #100c08;
     --tertiary-color: #39a6b2;
     --primary-color-transparent: rgba(252,225,56, 0.8);
     --secondary-color-transparent: rgba(2, 78, 118, 0.8);
@@ -19,7 +19,7 @@ body {
   
 header {
     padding: 20px 35px;
-    background-image: url('../images/hero-bg.jpg');
+    background-color: var(--secondary-color);
     background-position: 80%;
     background-attachment:fixed;
     background-size: cover;
@@ -39,7 +39,7 @@ header h1 {
     margin: 0;
     font-size: 36px;
     color: var(--primary-color);
-    text-shadow: 0px 0 15px rgba(0, 0, 0, 0.5);
+    text-shadow: 10px 10px 15px rgba(266, 88, 34, 0.75), -10px -10px 15px rgba(266, 88, 34, 0.75);
 }
   
 header a {
@@ -66,7 +66,7 @@ header nav ul {
     padding: 10px 15px;
     font-weight: 200;
     font-size: 1.55vw;
-    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+    text-shadow: -10px -10px 15px rgba(266, 88, 34, 0.75), 10px 10px 15px rgba(266, 88, 34, 0.75);
   }
   
   header nav ul li a:hover {
@@ -90,13 +90,11 @@ header nav ul {
   footer h2 {
     font-size: 30px;
     margin: 0;
+    text-shadow: -10px -10px 15px rgba(266, 88, 34, 0.75), 10px 10px 15px rgba(266, 88, 34, 0.75);
   }
   
   footer div {
     line-height: 1.5;
     text-align: right;
-  }
-  
-  footer a {
-    color: var(--primary-color);
+    text-shadow: -10px -10px 15px rgba(266, 88, 34, 0.75), 10px 10px 15px rgba(266, 88, 34, 0.75);
   }

@@ -8,13 +8,81 @@
     <body>
         <header>
             <h1>Ivan Thiessen</h1>
+            <nav>
+                <!--Unordered list element-->
+                <ul>
+                    <!--List item element-->
+                    <li>
+                        <!--Anchor element-->
+                        <a href="#about-me">About Me</a>
+                    </li>
+                    <li>
+                        <a href="#Portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#reach-me">Reach Me</a>
+                    </li>
+                    <li>
+                        <a href="#resume">Resume</a>
+                    </li>
+                </ul>
+            </nav>
         </header>
+
+        <!--"about me"-->
+        <section id="about-me" class="about-me">
+
+        </section>
+
+        <!--"reach me"-->
+        <section id="reach-me" class="contact">
+            <div class="flex-row">
+                <h2>Reach Me</h2>
+            </div>
+
+            <div class="contact-info">
+                <div>
+                    <h3>Ivan Thiessen</h3>
+                    <p>
+                        Questions, comments, concerns, or snide remarks?
+                        <br />
+                        I'd love to hear them! You may contact me via one or more of the following:
+                    </p>
+                    <address>
+                        941 Savannah River Dr. <br/>
+                        Adrian, MI <br/>
+                        49221<br/>
+                        P: 555.RUN.BUDZ (555.786.2839)<br/>
+                        E: <a href="mailto:ivant920@gmail.com">ivant920@gmail.com</a>
+                    </address>
+                </div>
+
+                <div class="contact-form">
+                    <h3>Contact Me</h3>
+                    <form>
+                        <label for="contact-name">Your Name</label>
+                        <input type="text" id="contact-name" placeholder="Your Name" />
+
+                        <label for="contact-message">Message</label>
+                        <textarea id="contact-message" placeholder="Message"></textarea>
+
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2970.4551206210667!2d-84.05449608431823!3d41.883068273081626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883cf107396866c1%3A0x6c354f9588a947ef!2s941%20Savannah%20River%20Dr%2C%20Adrian%2C%20MI%2049221!5e0!3m2!1sen!2sus!4v1633483831446!5m2!1sen!2sus"
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+                </iframe>
+            </div>
+        </section>
 
         <!--footer-->
         <footer>
-            <h2>Created by Ivan "Ivanicus" Thiessen</h2>
+            <h2>A work of the Lorestrider</h2>
             <div>
-                &copy; 2021 Ivan Industries LLC.
+                &copy; 2021 Ivan Thiessen.
             </div>
         </footer>
     </body>
